@@ -37,7 +37,7 @@ document.getElementsByTagName('head')[0].appendChild(googleFonts);
 
 let cssFile = document.createElement('link');
 cssFile.setAttribute('rel', 'stylesheet');
-cssFile.setAttribute('inxsvf.GitHub.io/cards/main.css');
+cssFile.setAttribute('href', 'https://inxsvf.github.io/cards/main.css');
 shadowRoot.querySelector('.triggerCard').appendChild(cssFile);
 
 /* load question */
