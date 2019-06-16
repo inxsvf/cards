@@ -1,0 +1,259 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* clear btn style */
+input, button, submit { 
+	border:none; 
+	background: none;
+} 
+
+/* aux */
+.right {
+	text-align: right;
+}
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+/* MAIN STYLES */
+.triggerCard {
+	max-width: 500px;
+	margin: 10px;
+
+	font-family: Montserrat, sans-serif;
+	vertical-align: middle;
+	color: #222;
+}
+
+.triggerCard main {
+    padding: 10px 15px;
+}
+
+.triggerCard hr {
+	border: 2px solid #331196;
+	color: #331196;
+}
+
+#trigger{
+	margin-bottom: 20px;
+}
+
+h1 {
+	font-size: 16px;
+	line-height: 20px;
+	color: #003;
+	font-weight: 700; /*  bold */
+	text-transform: uppercase;
+}
+
+.articleCard h1 {
+	text-transform: none;
+}
+
+#trigger h2 {
+	margin-top: 7px;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.secondary {
+	font-size: 12px;
+	line-height: 12px;
+	color: #8C8C8C;
+
+	text-transform: uppercase;
+	margin-top: 7px;
+}
+
+footer .secondary a {
+	font-size: 10px;
+	line-height: 10px;
+	color: #bcbec0;
+	text-decoration: underline;
+}
+
+footer .secondary a:hover,
+footer .secondary a:focus,
+footer .secondary a:active {
+	color: #309;
+}
+
+#optionsWrapper .choice {
+	height: 22px;
+	padding: 10px;
+	margin-bottom: 5px;
+
+	border: black solid 1px;
+	border-radius: 3px;
+
+	cursor: pointer;
+}
+
+#optionsWrapper .choice p {
+	font-size: 15px;
+	line-height: 22px;
+	text-align: left;
+}
+
+.choice .text,
+.choice .icon-result {
+    display: inline-block;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: left;
+}
+
+#optionsWrapper .choice:focus,
+#optionsWrapper .choice:active,
+#optionsWrapper .choice.correct {
+	border-color: #321196;
+	border-width: 2px;
+}
+
+#optionsWrapper .choice:hover,
+#optionsWrapper .choice:focus,
+#optionsWrapper .choice:active,
+#optionsWrapper .choice.selected {
+	background-color: #E0DBEF; /* 10% */
+}
+
+.choice.disabled {
+	cursor: default;
+	pointer-events: none;
+}
+
+#optionsWrapper .choice.selected {
+	background-color: #E0DBEF; /* 10% */
+}
+
+#optionsWrapper .choice.incorrect {
+	border-color: #CCCCCC;
+}
+#optionsWrapper .choice.selected.incorrect{
+	border-color: #E0DBEF; /* solid #3211960a = 10%*/
+}
+
+.choice .icon-result {
+    width: 22px;
+    height: 22px;
+	float: right;
+
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.choice.incorrect .icon-result {
+	background-image: url(incorrect.svg);
+}
+
+.choice.correct .icon-result {
+	background-image: url(correct.svg);
+}
+
+#recommendation {
+	margin-top: 25px;
+    opacity:0;
+}
+
+#recommendation .articleCard{
+	display: block;
+	margin-top: 10px;
+	padding: 15px;
+
+	/* drop-shadow */
+	-webkit-box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow:	1px 1px 6px 1px rgba(0, 0, 0, 0.2);
+    box-shadow:			1px 1px 6px 1px rgba(0, 0, 0, 0.2);
+
+    /* rounded-corners */
+    -webkit-border-radius:	4px;
+    -moz-border-radius:		4px;
+    border-radius:			4px;
+}
+
+#recommendation h1 {
+	margin-bottom: 15px;
+}
+
+.thumbnail {
+    display: block;
+    height: 150px;
+    background-repeat: no-repeat;
+	background-position: center center;
+}
+
+@-webkit-keyframes fadeIn {
+	0%   { opacity: 0; }
+	100% { opacity: 1; }
+}
+@-moz-keyframes fadeIn {
+	0%   { opacity: 0; }
+	100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+	0%   { opacity: 0; }
+	100% { opacity: 1; }
+}
+@keyframes fadeIn {
+	0%	{ opacity:0; }
+	100%	{ opacity:1; }
+}
+
+.fade {
+	-webkit-animation:	fadeIn 1s .3s ease-in-out forwards;
+	-moz-animation:		fadeIn 1s .3s ease-in-out forwards;
+	-o-animation:		fadeIn 1s .3s ease-in-out forwards;;
+	animation:			fadeIn 1s .3s ease-in-out forwards;
+
+}
+
+
