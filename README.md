@@ -1,6 +1,6 @@
 # Cards
 
-Ver [demo](https://https://users.fba.up.pt/~up200601296/ix/)
+Ver [demo](https://users.fba.up.pt/~up200601296/ix/)
 
 ## Usage
 
