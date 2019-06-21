@@ -67,7 +67,6 @@ a {
 /* MAIN STYLES */
 .triggerCard {
 	max-width: 500px;
-	margin: 10px;
 
 	font-family: Montserrat, sans-serif;
 	vertical-align: middle;
@@ -87,7 +86,7 @@ a {
 	margin-bottom: 20px;
 }
 
-h1 {
+.h1 {
 	font-size: 16px;
 	line-height: 20px;
 	color: #003;
@@ -95,11 +94,11 @@ h1 {
 	text-transform: uppercase;
 }
 
-.articleCard h1 {
+.articleCard .h1 {
 	text-transform: none;
 }
 
-#trigger h2 {
+#trigger .h2 {
 	margin-top: 7px;
 	font-size: 16px;
 	line-height: 20px;
@@ -220,7 +219,7 @@ footer .secondary a:active {
     border-radius:			4px;
 }
 
-#recommendation h1 {
+#recommendation .h1 {
 	margin-bottom: 15px;
 }
 
