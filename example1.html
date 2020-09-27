@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>TriggerCard</title>
+
+    <style>
+		/* reset */
+		html, body, div, span {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font-size: 100%;
+			font: inherit;
+			vertical-align: baseline;
+		}
+		body {
+			line-height: 1;
+		}
+
+		/*  mobile frame on desktop  */
+    	@media only screen and (min-width: 771px) {
+			body {
+				width: 700px;
+				margin: 0 auto;
+				font-family: Roboto, sans-serif;
+			}
+
+			.centered {
+				position: fixed;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+
+			#mobile-view{
+				background: no-repeat url("aux/AppleiPhone8Gold.png");
+				background-size: contain;
+				background-position: center;
+
+				height: 700px;
+				width: 400px;
+			}
+
+
+			#mobile-screen {
+				background: #f7f7f7;
+				height: 495px;
+				width: 280px;
+				border: 1px solid black;
+
+				overflow-y: scroll;
+			}
+		}
+
+    </style>
+
+  </head>
+
+  <body>
+  	<div id="mobile-view" class="centered">
+  		<div id="mobile-screen" class="centered">
+
+			<div id="triggerCardRoot" 
+			data-trigger-question="Em qual destas danças, se perdem mais calorias por aula?"
+			data-trigger-description="Prepare-se para a praia e para as festas de verão de uma forma divertida."
+			data-trigger-correct-answer="2"
+			data-trigger-option-1="Samba"
+			data-trigger-option-2="Zumba"
+			data-trigger-option-3="Pole-dance"
+			data-trigger-result-title="Os melhores tipos de dança para emagrecer e definir o corpo"
+			data-trigger-result-url="https://hintigo.com.br/danca-para-emagrecer/"
+			data-trigger-result-image-url="./aux/aula_zumba-425x318.jpg"></div>
+
+			<script type="text/javascript" src="https://inxsvf.github.io/cards/src/triggerCard.js"></script>
+
+  		</div>
+  	</div>
+
+  </body>
+</html>

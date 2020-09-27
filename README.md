@@ -1,21 +1,24 @@
 # Trigger Cards
 
-Check [demo](https://inxsvf.github.io/cards/example2.html)
-Check [just the _trigger card_](https://inxsvf.github.io/cards/example1.html)
-
-Scan the following QR Code to easy access to the demo:
-<img src="aux/cards.png" />
+<p align="center">
+    <a href="https://inxsvf.github.io/cards/example2.html">View Demo</a>
+    ·
+    <a href="https://inxsvf.github.io/cards/example1.html">View Trigger Card</a>
+  </p>
+<p align="center">
+  <img src="aux/cards.png" alt="View Demo" width="80" height="80">
+</p>
 
 
 ## Description
 
 _Trigger Cards_ loads a multiple-choice question into your webpage. 
 
-THis project was developed using Vanilla JavaScript and uses [Shadow DOM API](https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot).
+This project was developed using plain JavaScript. 
 
 ## Usage
 
-Include the following code section where you want you _trigger card_ to appear, and change its contents.
+Include the following code section where you want your _trigger card_ to appear, and change its contents.
 
 ```html
 	<div id="triggerCardRoot"
@@ -40,13 +43,17 @@ When you download the source, be aware to fix the location of the CSS and JavaSc
 ```js
 	..
 	let cssFile = document.createElement('link');
-	cssFile.setAttribute('href', 'https://inxsvf.github.io/src/cards/main.css');
+	cssFile.setAttribute('href', 'https://inxsvf.github.io/cards/main.css');
 	..
 ```
 
 - in your page: 
 ```html
-	<script type="text/javascript" src="https://inxsvf.github.io/src/cards/src/triggerCard.js"></script>
+	<script type="text/javascript" src="https://inxsvf.github.io/cards/src/triggerCard.js"></script>
 ```
+
+
+
+
 
 
