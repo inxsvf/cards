@@ -6,7 +6,7 @@
     <a href="https://inxsvf.github.io/cards/example1.html">View Trigger Card</a>
   </p>
 <p align="center">
-  <img src="aux/cards.png" alt="View Demo" width="80" height="80">
+  <img src="https://raw.githubusercontent.com/inxsvf/cards/master/aux/cards.png" alt="View Demo" height="150">
 </p>
 
 
