@@ -16,7 +16,7 @@ document.getElementsByTagName('head')[0].appendChild(googleFonts);
 
 let cssFile = document.createElement('link');
 cssFile.setAttribute('rel', 'stylesheet');
-cssFile.setAttribute('href', 'https://inxsvf.github.io/cards/main.css');
+cssFile.setAttribute('href', 'https://inxsvf.github.io/cards/src/main.css');
 shadowRoot.querySelector('.triggerCard').appendChild(cssFile);
 
 /* load question */
@@ -25,9 +25,9 @@ const triggerData = {
 	QuestionDescription: host.dataset.triggerDescription, 
 	CorrectAnswerId: host.dataset.triggerCorrectAnswer,
 	Answers: [
-		{ Id: 1, Value: host.dataset.triggerOption1 },
-		{ Id: 2, Value: host.dataset.triggerOption2 },
-		{ Id: 3, Value: host.dataset.triggerOption3 }
+		{ Id: 1, Value: host.dataset["triggerOption-1"] },
+		{ Id: 2, Value: host.dataset["triggerOption-2"] },
+		{ Id: 3, Value: host.dataset["triggerOption-3"] }
 	],
 	Result: {
 		Title: host.dataset.triggerResultTitle,
